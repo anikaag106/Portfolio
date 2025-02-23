@@ -3,89 +3,312 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-            <nav>
-                
-                <ul>
-                    <li id="logo" style="text-align: left;">Anika Agarwal</li>
-                    <li class="nav li"><a href="#about" class="nav a">About</a></li>
-                    <li class="nav li"><a href="#skills" class="nav a">Skills</a></li>
-                    <li class="nav li"><a href="#project" class="nav a">Projects</a></li>
-                    <li class="nav li"><a href="#contact" class="nav a">Contact</a></li>
-                </ul>
-            </nav>
-    
+        <!--navigation bar-->
+        <div class="navbar">
+            <div class="nav_logo border">
+                <div class="logo"></div>
+            </div>
 
-    <section class="intro">
-        <div class="intro-content">
-            <h1>Hi, I'm Anika Agarwal</h1>
-            <p>2<sup>nd</sup> year B.Tech Computer Science Student</p>
+            <div class="nav_address border">
+                <p id="line1">Delivering to New-Delhi 110001 </p>
+
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p id="line2">Update location</p>
+                </div>
+            </div>
+
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All Categories</option>
+                    <option>Alexa Skills</option>
+                    <option>Amazon Devices</option>
+                    <option>Amazon Fashion</option>
+                    <option>Amazon Fresh</option>
+                    <option>Amazon Fresh Meat</option>
+                    <option>Amazon Pharmacy</option>
+                    <option>Appliances</option>
+                    <option>Apps & Games</option>
+                    <option>Audible Audiobooks</option>
+                    <option>Baby</option>
+                    <option>Beauty</option>
+                    <option>Books</option>
+                    <option>Car & Motorbike</option>
+                    <option>Clothing & Accessories</option>
+                    <option>Collectibles</option>
+                    <option>Computers & Accessories</option>
+                    <option>Deals</option>
+                    <option>Electronics</option>
+                    <option>Furniture</option>
+
+                </select>
+
+                <input placeholder="Search Amazon.in" class="search-input">
+
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                </div>
+
+            </div>
+
+            <div class="nav-language border"> 
+                <span>
+                    <img src="/images/image.png">
+                </span>
+                EN
+            </div>
+
+            <div class="nav-signin border">
+                <div>
+                    <p><span>Hello, sign in</span></p>
+                    <p class="nav-second">Account & Lists</p>
+                </div>
+            </div>
+
+            <div class="nav-return border">
+                <div>
+                    <p><span>Returns</span></p>
+                    <p class="nav-second">& Orders</p>
+                </div>
+            </div>
+
+            <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+            </div>
+
         </div>
-    </section>
 
+        <!--panel-->
+
+        <div class="panel">
+            <div class="panel-all border">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+
+            <div class="panel-ops">
+                <div class="span-row">
+                    <span class="border">Fresh</span>
+                    <span class="border">MX Player</span>
+                    <span class="border">Sell</span>
+                    <span class="border">Best Sellers</span>
+                    <span class="border">Today's Deals</span>
+                    <span class="border">Mobiles</span>
+                    <span class="border">Electronics</span>
+                    <span class="border">Amazon Pay</span>
+                    <span class="border">Customer Service</span>
+                    <span class="border">Prime</span>
+                    <span class="border">Home & Kitchen</span>
+                </div>
+                
+            </div>
+
+            <div class="panel-img border">
+                <img src="/images/panel-img.jpg" alt="img">
+            </div>
+        </div>
     </header>
 
-    <section id="about">
-        <div class="aboutsec">
-           <h2>About Me</h2>
-           <div class="about-container">
-                 <img src="image.jpg" alt="My Photo">
-                 <div class="about-text">
-                      <p>I'm a passionate learner exploring the world of technology, programming, and development. Currently, I'm focused on improving my skills in web development.</p>
-                 </div>
-            </div>
-        </div>
-    </section>
+    <!--hero-section-->
 
-    <section id="skills">
-        <div class="skillsec">
-            <h2>Skills</h2><br>
-            <ul>
-                <li>HTML</li><br>
-                <li>CSS</li><br>
-                <li>Bootstrap</li><br>
-                <li>Python</li><br>
-                <li>C</li>
-            </ul>
-        </div>
-    </section>
+    <div class="hero-section">
 
-    <scetion id="project">
-        <h2>Projects</h2><br><br><br>
-        <div class="projectsec">
-            <div class="project-card">
-                <h3>Project 1</h3><br>
-                <a href="birthdayinvite.html">Birthday Invite</a><br>
+        <div class="shop-section">
+
+            <div class="card">
+                <h2>Revamp your home in style</h2>
+                <div class="container">
+                    <div class="item">
+                        <img src="/images/box1_1.jpg" alt="home decor">
+                        <p>Cushion covers, bedsheets & more</p>
+                    </div>
+    
+                    <div class="item">
+                        <img src="/images/box1_2.jpg" alt="vases">
+                        <p>Figurines, vases & more</p>
+                    </div>
+    
+                    <div class="item">
+                        <img src="/images/box1_3.jpg"alt="storage">
+                        <p>Home storage</p>
+                
+                    </div>
+    
+                    <div class="item">
+                        <img src="/images/box1_4.jpg"alt="light">
+                        <p>Lighting solutions</p>
+                    </div>
+                </div>
+                <a href="#" class="explore-link">Explore all</a>
                 
             </div>
-            <div class="project-card">
-                <h3>Project 2</h3><br>
-                <a href="#">Project 2</a><br>
+    
+            <div class="card">
+                <h2>Appliances for your home | Up to 55% off</h2>
+                <div class="container">
+                    <div class="item">
+                        <img src="/images/box2_1.jpg" alt="air Conditioner">
+                        <p>Air conditioners</p>
+                    </div>
+    
+                    <div class="item">
+                        <img src="/images/box2_2.jpg" alt="refrigerator">
+                        <p>Refrigerators</p>
+                    </div>
+    
+                    <div class="item">
+                        <img src="/images/box2_3.jpg"alt="microwave">
+                        <p>Microwaves</p>
                 
+                    </div>
+    
+                    <div class="item">
+                        <img src="/images/box2_4.jpg"alt="Washing Machine">
+                        <p>Washing machines</p>
+                    </div>
+                </div>
+                <a href="#" class="explore-link">See more</a>    
             </div>
+    
+            <div class="card">
+                <h2>Starting <i class="fa-solid fa-indian-rupee-sign"></i>149 | Headphones</h2>
+                <div class="container">
+                    <div class="item">
+                        <img src="/images/box3_1.jpg" alt="boAt">
+                        <p>Starting Rs 249 | boAt</p>
+                    </div>
+    
+                    <div class="item">
+                        <img src="/images/box3_2.jpg" alt="boult">
+                        <p>Starting Rs 349 | boult</p>
+                    </div>
+    
+                    <div class="item">
+                        <img src="/images/box3_3.jpg"alt="zebronics">
+                        <p>Starting Rs 149 | Zebronics</p>
+                
+                    </div>
+    
+                    <div class="item">
+                        <img src="/images/box3_4.jpg"alt="noise">
+                        <p>Starting Rs 649 | Noise</p>
+                    </div>
+                </div>
+                <a href="#" class="explore-link">See all offers</a>    
+            </div>
+    
+            <div class="card">
+                <h2>Automotive essentials | Up to 60% off</h2>
+                <div class="container">
+                    <div class="item">
+                        <img src="/images/box4_1.jpg" alt="cleaning">
+                        <p>Cleaning accessories</p>
+                    </div>
+    
+                    <div class="item">
+                        <img src="/images/box4_2.jpg" alt="tyre">
+                        <p>Tyre & rim care</p>
+                    </div>
+    
+                    <div class="item">
+                        <img src="/images/box4_3.jpg"alt="helmet">
+                        <p>Helmets</p>
+                
+                    </div>
+    
+                    <div class="item">
+                        <img src="/images/box4_4.jpg"alt="vaccumcleaner">
+                        <p>Vaccum cleaner</p>
+                    </div>
+                </div>
+                <a href="#" class="explore-link">See more</a>    
+            </div>    
         </div>
-    </scetion>
+    </div>
 
-    <section id="contact">
-        <h2>Contact</h2><br>
-        <div class="continfo">
-           <ul>
-              <li class="contact">Email: <a href="mailto:anikaagarwal.spn@gmail.com">anikaagarwal.spn@gmail.com</a></li><br>
-              <li class="contact">Contact: <a href="#">6826941897</a></li><br>
-              <li><a href="https://github.com/anikaag106" target="_blank" class="contact">GitHub</a></li>
-            
-           </ul>
-        </div>
+    <div class="shop-div">
+        <div class="shop-conatiner">
+            <h2>Up to 50% off | Unique products from stores near you</h2>
+            <a href="#" class="explore-link" id="link">See all offers</a>
+            <div class="simg-div">
+                <img src="images/img1.jpg" alt="decor" class="shop-div-img">
+                <img src="images/img2.jpg" alt="decor" class="shop-div-img">
+                <img src="images/img3.jpg" alt="decor" class="shop-div-img">
+                <img src="images/img4.jpg" alt="decor" class="shop-div-img">
+                <img src="images/img5.jpg" alt="decor" class="shop-div-img">
+                <img src="images/img6.jpg" alt="decor" class="shop-div-img">    
+           </div>
+    </div>
 
-    </section>
+    <!--footer section-->
 
     <footer>
-        <p>&copy; 2025 Anika Agarwal | All Rights Reserved</p>
-    </footer>
-    
+        <div class="foot-panel1">
+            Back to top
+        </div>
+
+        <div class="foot-panel2">
+            <ul>
+                <p>Get to Know Us</p>
+                <a href="#" class="link">About Amazon</a>
+                <a href="#" class="link">Careers</a>
+                <a href="#" class="link">Press Releases</a>
+                <a href="#" class="link">Amazon Science</a>
+            </ul>
+
+            <ul>
+                <p>Connect with Us</p>
+                <a href="#" class="link">Facebook</a>
+                <a href="#" class="link">Twitter</a>
+                <a href="#" class="link">Instagram</a>
+            </ul>
+
+            <ul>
+                <p>Make money with Us</p>
+                <a href="#" class="link">Sell on Amazon</a>
+                <a href="#" class="link">Sell under Amazon Accelerator</a>
+                <a href="#" class="link">Protect & build your brand</a>
+                <a href="#" class="link">Amazon Global Selling</a>
+                <a href="#" class="link">Supply to Amazon</a>
+                <a href="#" class="link">Become an Affiliate</a>
+                <a href="#" class="link">Fulfillment by Amazon</a>
+                <a href="#" class="link">Advertise Your Products</a>
+                <a href="#" class="link">Amazon Pay on Merchants</a>
+            </ul>
+
+            <ul>
+                <p>Let Us Help You</p>
+                <a href="#" class="link">Your Account</a>
+                <a href="#" class="link">Returns Center</a>
+                <a href="#" class="link">Recalls & Product Safety alerts</a>
+                <a href="#" class="link">100% Purchase Protection</a>
+                <a href="#" class="link">Amazon App Download</a>
+                <a href="#" class="link">Help</a>
+            </ul>   
+        </div>
+
+        <div class="foot-panel3">
+            <div class="logo1"></div>
+        </div>
+
+        <div class="foot-panel4">
+            <div class="pages">
+                <a href="#">Conditions of Use & Sale</a>
+                <a href="#">Privacy Notice</a>
+                <a href="#">Interest-Based Ads</a>
+            </div>
+
+            <div class="copywright">
+                <p>&copy; 1996-2025, Amazon.com, Inc. or it's affiliates</p>
+            </div>
+        </div>
+    </footer>   
 </body>
 </html>
